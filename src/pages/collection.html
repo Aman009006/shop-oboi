@@ -241,19 +241,66 @@
       </div>
     </header>
       <div class="filter">
-        <div class="filter__title">Фильтры</div>
+        
         <form action="" class="filter__form">
+          <div class="filter__title">Фильтры</div>
+          <div class="filter__close">
+            <img src="../assets/images/close.png" alt="close">
+          </div>
           <div class="filter__list">
             <input type="checkbox" id="category" class="filter__checkbox">
             <label for="category" class="filter__label">
+              <p class="label__title"> Категории</p>
+              <div class="filter__links">
+                <img src="../assets/images/down.png" alt="error">
+                <a class="links-title">Все категории</a>
+              </div>
+              <div class="filter__links-container">
+                <div class="filter__links-title">Обои</div>
+                <a class="filter__links-subtitle">Флизелиновые обои</a>
+                <div class="filter__links-number">2</div>
+              </div>
+            </label>
+          </div>
+
+          <div class="filter__list">
+            <input type="checkbox" id="price" class="filter__checkbox">
+            <label for="price" class="filter__label">
+              <p class="label__title"> Цена</p>
+              <div class="price-input">
+                <div class="field">
+                  <span>от</span>
+                  <input type="number" class="input-min" placeholder="от" value="1463">
+                </div>
+                <div class="separator">-</div>
+                <div class="field">
+                  <span>до</span>
+                  <input type="number" class="input-max" placeholder="до" value="2163">
+                </div>
+              </div>
+              <div class="slider">
+                <div class="progress"></div>
+              </div>
+              <div class="range-input">
+                <input type="range" class="range-min" min="1463" max="2163" value="1463" step="1">
+                <input type="range" class="range-max" min="1463" max="2163" value="2163" step="1">
+              </div>
+            </label>
+          </div>
+
+          <div class="filter__list">
+            <input type="checkbox" id="complect" class="filter__checkbox">
+            <label for="complect" class="filter__label">
               <p class="label__title"> Комплектация</p>
               <div class="label__item">
                 <input type="checkbox" id="wallpaper" class="label__checkbox">
                 <label for="wallpaper" class="label__child">обои</label>
+                <p class="label__number">2</p>
               </div>
               <div class="label__item">
                 <input type="checkbox" id="wallpaper2" class="label__checkbox">
                 <label for="wallpaper2" class="label__child">обои - 1шт</label>
+                <p class="label__number">2</p>
               </div>
             </label>
           </div>
@@ -264,6 +311,7 @@
               <div class="label__item">
                 <input type="checkbox" id="widthThing" class="label__checkbox">
                 <label for="widthThing" class="label__child">106 см</label>
+                <p class="label__number">2</p>
               </div>
             </label>
           </div>
@@ -274,10 +322,38 @@
               <div class="label__item">
                 <input type="checkbox" id="heightThing" class="label__checkbox">
                 <label for="heightThing" class="label__child">1005 см</label>
+                <p class="label__number">2</p>
               </div>
               <div class="label__item">
                 <input type="checkbox" id="heightThing2" class="label__checkbox">
                 <label for="heightThing2" class="label__child">1000 см</label>
+                <p class="label__number">2</p>
+              </div>
+            </label>
+          </div>
+          <div class="filter__list">
+            <input type="checkbox" id="weight" class="filter__checkbox">
+            <label for="weight" class="filter__label">
+              <p class="label__title">Вес с упаковкой (кг)</p>
+              <div class="label__item">
+                <input type="checkbox" id="weight1" class="label__checkbox">
+                <label for="weight1" class="label__child">3 кг</label>
+                <p class="label__number">2</p>
+              </div>
+              <div class="label__item">
+                <input type="checkbox" id="weight2" class="label__checkbox">
+                <label for="weight2" class="label__child">2.8 кг</label>
+                <p class="label__number">2</p>
+              </div>
+              <div class="label__item">
+                <input type="checkbox" id="weight3" class="label__checkbox">
+                <label for="weight3" class="label__child">2.5 кг</label>
+                <p class="label__number">2</p>
+              </div>
+              <div class="label__item">
+                <input type="checkbox" id="weight4" class="label__checkbox">
+                <label for="weight4" class="label__child">2.6 кг</label>
+                <p class="label__number">2</p>
               </div>
             </label>
           </div>
@@ -288,10 +364,14 @@
               <div class="label__item">
                 <input type="checkbox" id="number" class="label__checkbox">
                 <label for="number" class="label__child">1 шт.</label>
+                <p class="label__number">2</p>
               </div>
             </label>
           </div>
         </form>
+        <div class="filter__submit">
+          <button>Применить</button>
+        </div>
       </div>
 
 
@@ -362,5 +442,6 @@
       </div>
     </div>
     </footer>
+    <script type="module" src="../js/index.js"></script>
   </body>
 </html>
