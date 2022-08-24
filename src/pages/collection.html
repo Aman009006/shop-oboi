@@ -15,6 +15,231 @@
     <title>Document</title>
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__mobile">
+          <button class="burger">
+            <span></span>
+          </button>
+          <a href="/">
+            <img
+              src="https://static.insales-cdn.com/files/1/4740/19018372/original/Group_173.svg"
+              class="header__logo"
+              alt="logo"
+            />
+          </a>
+          <a class="mobile-cart">
+            <img src="../assets/images/icons/cart.svg" alt="logo" />
+            <span class="mobile-cart__counter"></span>
+          </a>
+        </div>
+
+        <div class="header__desktop">
+          <div class="header__content-top">
+            <a href="/">
+              <img
+                src="https://static.insales-cdn.com/files/1/4740/19018372/original/Group_173.svg"
+                class="header__logo"
+                alt="logo"
+              />
+            </a>
+            <button class="header__catalog-btn">
+              <span class="catalog-btn__icon"></span>
+              Каталог
+            </button>
+            <form class="header__search" onsubmit="return false">
+              <input type="text" class="search__input" placeholder="Поиск" />
+              <button type="submit" class="search__button">
+                <img
+                  class="search__logo"
+                  src="../assets/images/icons/search.svg"
+                  alt="search"
+                />
+              </button>
+            </form>
+            <ul class="content-top__links">
+              <li>
+                <a class="links"
+                  ><img src="../assets/images/icons/compared.svg" alt="logo"
+                /></a>
+              </li>
+              <li>
+                <a class="links"
+                  ><img src="../assets/images/icons/heart.svg" alt="logo"
+                /></a>
+              </li>
+              <li>
+                <a class="links links__profile"
+                  ><img src="../assets/images/icons/user.svg" alt="logo" /><span
+                    class="profile__text"
+                    >Профиль</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="links links__cart"
+                  ><img src="../assets/images/icons/cart.svg" alt="logo" /><span
+                    class="profile__text"
+                    >Корзина</span
+                  ><span class="cart__counter">0</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="header__content-bottom">
+            <nav class="header__nav">
+              <li><a class="nav__item" href="#">О нас</a></li>
+              <li><a class="nav__item" href="#">Оплата</a></li>
+              <li><a class="nav__item" href="#">Доставка</a></li>
+              <li><a class="nav__item" href="#">Контакты</a></li>
+            </nav>
+            <div class="header__languages">
+              <div class="languages__drop-dawn">
+                <a href="?lang=ua" class="languages-item">ru</a>
+              </div>
+              <div class="drop-dawn__list d-none">
+                <a href="?lang=ua" class="languages-item">ua</a>
+                <a href="?lang=en" class="languages-item">en</a>
+              </div>
+              <a href="tel:+7(800) 800-80-80" class="header__contact"
+                >+7(800) 800-80-80</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-menu__head-content">
+          <img
+            class="mobile-menu__close"
+            src="../assets/images/icons/close.svg"
+            alt="close"
+          />
+          <div class="mobile-menu__languages d-flex">
+            <a href="?lang=ua" class="mobile-menu__language">ru</a>
+            <a href="?lang=ua" class="mobile-menu__language">ua</a>
+            <a href="?lang=en" class="mobile-menu__language">en</a>
+          </div>
+        </div>
+        <div class="mobile-menu__control-tabs">
+          <div class="mobile-menu__profile">
+            <a class="links"
+              ><img src="../assets/images/icons/compared.svg" alt="logo"
+            /></a>
+            <a class="links"
+              ><img src="../assets/images/icons/heart.svg" alt="logo"
+            /></a>
+            <a class="links"
+              ><img src="../assets/images/icons/user.svg" alt="logo"
+            /></a>
+          </div>
+          <div class="mobile-menu__search">
+            <form
+              class="mobile-menu__search-form d-none"
+              onsubmit="return false"
+            >
+              <input type="text" class="search__input" placeholder="Поиск" />
+              <button type="submit" class="search__button">
+                <img
+                  class="search__logo"
+                  src="../assets/images/icons/search.svg"
+                  alt="search"
+                />
+              </button>
+            </form>
+            <img
+              class="close__search d-none"
+              src="../assets/images/icons/close.svg"
+              alt="logo"
+            />
+            <img
+              class="open__search"
+              src="../assets/images/icons/search.svg"
+              alt="logo"
+            />
+          </div>
+        </div>
+        <div class="mobile-menu__catalog">
+          <h2 class="catalog__title">Каталог</h2>
+          <div class="catalog__blogs">
+            <input type="checkbox" id="wallpaper" class="catalog__checkbox" />
+            <label class="catalog__list" for="wallpaper">
+              <a href="#" class="catalog__subtitle">Обои</a>
+              <ul class="catalog__items">
+                <li><a href="#">Флизелиновые обои</a></li>
+              </ul>
+            </label>
+
+            <input type="checkbox" id="lighting" class="catalog__checkbox" />
+            <label class="catalog__list" for="lighting">
+              <a href="#" class="catalog__subtitle">Освещение</a>
+              <ul class="catalog__items">
+                <li><a href="#">Освещение жилых помещений</a></li>
+                <li><a href="#">Настольные лампы</a></li>
+                <li><a href="#">Светодиодное освещение</a></li>
+              </ul>
+            </label>
+
+            <input type="checkbox" id="plumbing" class="catalog__checkbox" />
+            <label class="catalog__list" for="plumbing">
+              <a href="#" class="catalog__subtitle">Сантехника</a>
+              <ul class="catalog__items">
+                <li><a href="#">Смесители для ванной и кухни</a></li>
+              </ul>
+            </label>
+
+            <input type="checkbox" id="tools" class="catalog__checkbox" />
+            <label class="catalog__list" for="tools">
+              <a href="#" class="catalog__subtitle">Инструменты</a>
+              <ul class="catalog__items">
+                <li><a href="#">Электроинструменты</a></li>
+                <li><a href="#">Сварочное оборудование</a></li>
+                <li><a href="#">Штукатурно-отделочные инструменты</a></li>
+                <li><a href="#">Ручной инструмент</a></li>
+                <li><a href="#">Аксессуары для электроинструмента</a></li>
+                <li><a href="#">Минимойки и строительные пылесосы</a></li>
+                <li><a href="#">Инструменты для мастерской</a></li>
+              </ul>
+            </label>
+
+            <input type="checkbox" id="coverings" class="catalog__checkbox" />
+            <label class="catalog__list" for="coverings">
+              <a href="#" class="catalog__subtitle">Напольные покрытия</a>
+              <ul class="catalog__items">
+                <li><a href="#">Виниловый пол</a></li>
+              </ul>
+            </label>
+
+            <input type="checkbox" id="materials" class="catalog__checkbox" />
+            <label class="catalog__list" for="materials" >
+              <a href="#" class="catalog__subtitle">Стройматериалы</a>
+              <ul class="catalog__items">
+                <li><a href="#">Сухие смеси и грунтовки</a></li>
+              </ul>
+            </label>
+
+            <input type="checkbox" id="paints" class="catalog__checkbox" />
+            <label class="catalog__list" for="paints">
+              <a href="#" class="catalog__subtitle">Обои</a>
+              <ul class="catalog__items">
+                <li><a href="#">Краски</a></li>
+              </ul>
+            </label>
+          </div>
+        </div>
+        <div class="mobile-menu__content-bottom">
+          <nav class="mobile-menu__nav">
+            <li><a class="nav__item" href="#">О нас</a></li>
+            <li><a class="nav__item" href="#">Оплата</a></li>
+            <li><a class="nav__item" href="#">Доставка</a></li>
+            <li><a class="nav__item" href="#">Контакты</a></li>
+          </nav>
+            <a href="tel:+7(800) 800-80-80" class="mobile-menu__contact"
+              >+7(800) 800-80-80</a>
+          </div>
+        </div>
+      </div>
+    </header>
       <div class="filter">
         <div class="filter__title">Фильтры</div>
         <form action="" class="filter__form">
