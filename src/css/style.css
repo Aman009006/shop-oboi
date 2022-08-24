@@ -1,0 +1,7 @@
+@import './components/footer.css';
+@import './components/header.css';
+@import './modules/collection.css';
+@import './modules/detail.css';
+@import './modules/main.css';
+@import './__reset.css';
+@import './common.css';
