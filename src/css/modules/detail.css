@@ -1,0 +1,88 @@
+/*фильтры*/
+
+.filter{
+    border: 1px solid rgba(206, 204, 204, 0.596);
+    margin: 200px;
+    max-width: 316.56px;
+    /* padding: 0px 16px; */
+}
+.filter__title{
+    font-size: 24px;
+    color: #333333;
+    font-weight: 700;
+    padding: 16px 16px;
+    border-bottom: 1px solid rgba(206, 204, 204, 0.596);
+}
+
+
+.filter__form {
+}
+.filter__list {
+    padding: 6px 16px;
+    border-bottom: 1px solid rgba(206, 204, 204, 0.596);
+    border-top: 1px solid rgba(206, 204, 204, 0.596);
+}
+.filter__checkbox {
+    appearance: none;
+    position: absolute;
+}
+
+.filter__label {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    background:url(../../assets/images/up.png) no-repeat;
+    background-size: 16px;
+    background-position: 96% 8px;
+    color: #333333;
+    cursor: pointer;
+    height: 30px;
+    overflow: hidden;
+}
+
+.filter__checkbox:checked+.filter__label{
+    height: auto;
+    background:url(../../assets/images/down.png) no-repeat;
+    background-size: 16px;
+    background-position: 96% 8px;
+}
+.label__title{
+    margin-bottom: 0px;
+    padding: 4px;
+    padding-left: 6px;
+}
+.label__title:hover{
+    background: rgba(212, 211, 211, 0.397);
+}
+
+
+.label__item {
+    display: flex;
+    padding-left:6px ;
+}
+.label__checkbox {
+    appearance: none;
+}
+.label__child {
+    background: url(../../assets/images/square.png) no-repeat;
+    background-size: 22px;
+    padding-left: 22px;
+    background-position: -2px 0px;
+    position: relative;
+}
+.label__checkbox:checked+.label__child{
+    background: url(../../assets/images/ok.png) no-repeat;
+    background-size: 12px;
+    background-position: 2px 4px;
+}
+.label__checkbox:checked+.label__child::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #ffda33;
+    top: 2px;
+    z-index: -1;
+    left: 0px;
+}
