@@ -12,6 +12,7 @@
 }
 .header__mobile{
   display: none;
+  padding: 15px;
 }
 .header__catalog-btn {
   height: 40px;
