@@ -10,11 +10,81 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <footer>
-      
-    </footer>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__content-top">
+            <img
+              src="https://static.insales-cdn.com/files/1/4740/19018372/original/Group_173.svg"
+              class="header__logo"
+              alt="logo"
+            />
+            <button class="header__catalog-btn">
+              <span class="catalog-btn__icon"></span>
+              Каталог
+            </button>
+            <form class="header__search" onsubmit="return false0">
+              <input type="text" class="search__input" placeholder="Поиск" />
+              <button type="submit" class="search__button">
+                <img
+                  class="search__logo"
+                  src="../assets/images/icons/search.svg"
+                  alt="search"
+                />
+              </button>
+            </form>
+            <ul class="content-top__links">
+              <li>
+                <a class="links"
+                  ><img src="../assets/images/icons/compared.svg" alt="logo"
+                /></a>
+              </li>
+              <li>
+                <a class="links links"
+                  ><img src="../assets/images/icons/heart.svg" alt="logo"
+                /></a>
+              </li>
+              <li>
+                <a class="links links__profile"
+                  ><img src="../assets/images/icons/user.svg" alt="logo" /><span
+                    >Профиль</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="links links__cart"
+                  ><img src="../assets/images/icons/cart.svg" alt="logo" /><span
+                    >Корзина</span
+                  ><span class="cart__counter">0</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="header__content-bottom">
+            <nav class="header__nav">
+              <li><a class="nav__item" href="#">О нас</a></li>
+              <li><a class="nav__item" href="#">Оплата</a></li>
+              <li><a class="nav__item" href="#">Доставка</a></li>
+              <li><a class="nav__item" href="#">Контакты</a></li>
+            </nav>
+            <div class="header__languages">
+              <div class="languages__drop-dawn">
+                <a href="?lang=ua" class="languages-item">ru</a>
+              </div>
+              <div class="drop-dawn__list d-none">
+                <a href="?lang=ua" class="languages-item">ua</a>
+                <a href="?lang=en" class="languages-item">en</a>
+              </div>
+              <a href="tel:" class="header__contact">+7(800) 800-80-80</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer></footer>
   </body>
 </html>

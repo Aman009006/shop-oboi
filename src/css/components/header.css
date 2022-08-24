@@ -1,0 +1,155 @@
+.header {
+  padding: 1vw 0px;
+}
+
+.header__content-top {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 30px;
+}
+
+.header__catalog-btn {
+  height: 40px;
+  background-color: #ffda33;
+  color: #333333;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0px 15px;
+  font-weight: 600;
+}
+
+.catalog-btn__icon {
+  width: 16px;
+  display: block;
+  height: 1px;
+  border: 1px solid #333333;
+}
+
+.catalog-btn__icon::before {
+  content: "";
+  width: 16px;
+  display: block;
+  height: 1px;
+  margin-top: -6px;
+  border: 1px solid #333333;
+  transform: translate(-1px);
+}
+
+.catalog-btn__icon::after {
+  content: "";
+  margin-top: 8px;
+  width: 10px;
+  display: block;
+  height: 1px;
+  border: 1px solid #333333;
+  transform: translate(-1px);
+}
+
+.header__search {
+  margin-left: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.search__input {
+  height: 40px;
+  padding: 10px;
+  border: 2px solid #ffda33;
+  width: 100%;
+}
+
+.search__input:focus {
+  border: 0px;
+  outline: 2px solid #ffda33;
+}
+
+.search__button {
+  background-color: #ffda33;
+  border: 0px;
+  height: 40px;
+  padding: 0px 15px;
+}
+
+.search__logo {
+  width: 24px;
+}
+
+.content-top__links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.links__profile {
+  padding: 0 15px;
+}
+
+.links__cart {
+  padding-left: 15px;
+}
+
+.links__profile,
+.links__cart {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #f7f7f7;
+  font-weight: 600;
+  height: 40px;
+  color: #333333;
+  font-size: 0.9rem;
+}
+
+.cart__counter {
+  background-color: #ffda33;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.header__content-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+
+.header__nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__item {
+  color: #333333;
+}
+
+.header__languages {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+.drop-dawn__list {
+  position: absolute;
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: 0px 0px 6px rgb(0 0 0 / 10%);
+  z-index: 2;
+}
+
+.languages-item {
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.drop-dawn__list {
+  display: flex;
+  flex-direction: column;
+}
+.header__contact{
+  color: #333333;
+}
