@@ -1,7 +1,6 @@
 .header {
   padding: 1vw 0px;
 }
-
 .header__content-top {
   display: flex;
   align-items: center;
@@ -73,10 +72,6 @@
   border: 0px;
   height: 40px;
   padding: 0px 15px;
-}
-
-.search__logo {
-  width: 24px;
 }
 
 .content-top__links {

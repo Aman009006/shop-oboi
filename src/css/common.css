@@ -3,18 +3,3 @@ body {
   font-family: "PT Root UI";
   font-weight: 400;
 }
-
-ul,
-p {
-  margin: 0px;
-}
-li {
-  list-style-type: none;
-}
-a{
-  text-decoration: none;
-}
-a:hover{
-  color: #333333;
-  cursor: pointer;
-}

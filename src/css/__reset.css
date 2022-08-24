@@ -1,0 +1,17 @@
+ul,
+p {
+  margin: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333333;
+  cursor: pointer;
+}
