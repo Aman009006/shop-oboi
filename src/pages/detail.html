@@ -15,6 +15,7 @@
     <title>Document</title>
   </head>
   <body>
+
     <header class="header">
       <div class="container">
         <div class="header__mobile">
@@ -33,6 +34,49 @@
             <span class="mobile-cart__counter"></span>
           </a>
         </div>
+
+    <div class="detail">
+      <div class="container">
+        <div class="detail__slider">
+              <div
+          style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+          class="swiper mySwiper2"
+          slidesPerView="auto"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../assets/images/wall1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/wall2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/wall3.jpg" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" slidesPerView="auto" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../assets/images/wall1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/wall2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/wall3.jpg" />
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="detail__description">
+          
+        </div>
+      </div>
+    </div>
+
 
         <div class="header__desktop">
           <div class="header__content-top">
@@ -306,6 +350,28 @@
       </div>
     </div>
     </footer>
+
     <script src="../js/index.js" type="module"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+
   </body>
 </html>
