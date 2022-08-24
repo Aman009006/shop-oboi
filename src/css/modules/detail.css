@@ -263,6 +263,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        right: -100%;
     }
     .filter form{
         overflow-y:auto;
