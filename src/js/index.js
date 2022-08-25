@@ -1,3 +1,4 @@
+import changeCardMode from './changeCardMode.js';
 import changeNumberOfProducts from './changeNumberOfProduct.js';
 import checkoutDescription from './checkoutDescription.js';
 import closeFilter from './closeFilter.js';
@@ -10,6 +11,7 @@ import { toggleTestimonialsForm } from './toggleTestimonialsForm.js';
 
 
 // swiper()
+changeCardMode()
 changeNumberOfProducts()
 toggleTestimonialsForm()
 range()

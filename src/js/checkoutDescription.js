@@ -1,6 +1,5 @@
 const descriptionRadios = document.querySelectorAll(".description__radio");
 const informItems = document.querySelectorAll(".inform-item");
-const descriptionInforms = document.querySelectorAll(".description__inform");
 
 const changeDescription=(id, index)=>{
   informItems.forEach(element=>{
