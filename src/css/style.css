@@ -7,6 +7,7 @@
 @import './__reset.css';
 @import './common.css';
 @import "./components/mobileMenu.css";
+@import './components/filter.css';
 
 .container{
     padding: 0 40px;

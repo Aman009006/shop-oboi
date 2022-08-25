@@ -3,11 +3,11 @@ const changeNumberOfProducts = () => {
     const minus = document.querySelector('.detail__minus');
     const num = document.querySelector('.detail__number-inp');
 
-    plus.addEventListener('click', () => {
+    plus?.addEventListener('click', () => {
         num.value = Number(num.value) + 1;
     })
 
-    minus.addEventListener('click', () => {
+    minus?.addEventListener('click', () => {
         if (num.value > 1) num.value = Number(num.value) - 1;
     })
 }

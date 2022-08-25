@@ -3,7 +3,7 @@ const range = () => {
         priceInput = document.querySelectorAll(".price-input input"),
         werttttt = document.querySelector(".slider .progress");
     let priceGap = 1;
-    priceInput.forEach(input => {
+    priceInput?.forEach(input => {
         input.addEventListener("input", e => {
             let minPrice = parseInt(priceInput[0].value),
                 maxPrice = parseInt(priceInput[1].value);
@@ -23,7 +23,7 @@ const range = () => {
             }
         });
     });
-    rangeInput.forEach(input => {
+    rangeInput?.forEach(input => {
         input.addEventListener("input", e => {
             let minVal = parseInt(rangeInput[0].value),
                 maxVal = parseInt(rangeInput[1].value);
