@@ -1,3 +1,4 @@
+@import './common.css';
 @import "./fonts.css";
 @import './components/footer.css';
 @import './components/header.css';
@@ -5,5 +6,5 @@
 @import './modules/detail.css';
 @import './modules/main.css';
 @import './__reset.css';
-@import './common.css';
 @import "./components/mobileMenu.css";
+@import "./components/detailDescription.css";

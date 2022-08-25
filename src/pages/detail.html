@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS only -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
-    />
+    /> -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
   </head>
@@ -115,7 +115,7 @@
             src="../assets/images/icons/close.svg"
             alt="close"
           />
-          <div class="mobile-menu__languages d-flex">
+          <div class="mobile-menu__languages">
             <a href="?lang=ua" class="mobile-menu__language">ru</a>
             <a href="?lang=ua" class="mobile-menu__language">ua</a>
             <a href="?lang=en" class="mobile-menu__language">en</a>
@@ -276,14 +276,151 @@
           </div>
         </div>
         </div>
-        <div class="detail__description">
-          
+      </div>
+    </div>
+    <div class="detail__description">
+      <div class="container">
+        <form class="description__control-tabs" onsubmit="return false">
+          <div class="description__item">
+            <input type="radio" checked name="radio" id="description" class="description__radio">
+            <label class="description__title" for="description">
+              Описание
+            </label>
+            <div class="description__drop-down">
+              <p class="description inform-item">Обои виниловые на флизелиновой основе коллекция Sea. Тип рисунка: Абстракция и геометрия. Раппорт (см): 64. Размеры рулона (м): 1.06 х 10.05. Способ производства: Горячее тиснение. Основа: Флизелиновая. Стиль артикула: Современный. Глянцевый муар на бархатистом фоне напоминает плавное движение волн, морской берег под лучами утреннего солнца. Теплые пастельные тона воплощают идею песка, слегка прохладного, но не остывшего за ночь. Переливы цвета завораживают. А мягкие линии приносят в интерьер гармонию и умиротворение. Кажется, еще чуть-чуть и услышишь шум прибоя. Коллекции PALITRA - это самый большой выбор всех типов виниловых обоев. В каталоге обоев PALITRA вы найдете множество интересных дизайнерских решений от лидера обойного российского рынка. Качество продукции соответствует самым высоким стандартам и требованиям потребителя, благодаря чему обои PALITRA уже много лет находят своих покупателей.</p>
+            </div>
+          </div>
+          <div class="description__item">
+            <input type="radio" name="radio" id="characteristic" class="description__radio">
+            <label class="description__title" for="characteristic">Характеристики</label>
+            <div class="description__drop-down">
+              <ul class="characteristics d-none inform-item">
+                <li class="characteristics__item">
+                  <span class="characteristics__title">Ширина предмета</span>
+                  <span class="characteristics__result">106 см</span>
+                </li>
+                <li class="characteristics__item">
+                  <span class="characteristics__title">Длина предмета</span>
+                  <span class="characteristics__result">1000 см</span>
+                </li>
+                <li class="characteristics__item">
+                  <span class="characteristics__title">Вес с упаковкой (кг)</span>
+                  <span class="characteristics__result">2.6 кг</span>
+                </li>
+              </ul>
+            </div>
+          </div>   
+
+          <div class="description__item">
+            <input type="radio" name="radio" id="testimonials" class="description__radio">
+            <label class="description__title" for="testimonials">Отзывы</label>
+            <div class="description__drop-down">
+              <div class="testimonials d-none inform-item">
+                <p class="testimonials__title">Отзывов еще никто не оставлял</p>
+                <button class="testimonials__button">Написать отзыв</button>
+                <div class="testimonials__inner d-none">
+                  <div class="testimonials__head">
+                    <h4 class="testimonials__subtitle">Отзыв</h4>
+                    <p class="testimonials__close">Закрыть</p>
+                  </div>
+                  <div class="stars">
+                    <img src="../assets/images/star.png" alt="stars">
+                    <img src="../assets/images/star.png" alt="stars">
+                    <img src="../assets/images/star.png" alt="stars">
+                    <img src="../assets/images/star.png" alt="stars">
+                    <img src="../assets/images/star.png" alt="stars">
+                  </div>
+                  <form class="testimonials__form">
+                    <div class="testimonials__inputs">
+                      <div>
+                        <p>Имя*</p>
+                        <input class="testimonials__name" type="text" placeholder="Имя">
+                      </div>
+                      <div>
+                        <p>Email*</p>
+                        <input class="testimonials__email" type="email" placeholder="Email">
+                      </div>
+                    </div>
+                    <p>Cообщения*</p>
+                    <textarea class="testimonials__sms" name="testimonials" placeholder="Cообщения"></textarea>
+                    <div class="confirmation__person">
+                      <input type="checkbox" id="confirmation__input">
+                      <label for="confirmation__input">Я не робот</label>
+                      <img width="30px" src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="logo">
+                      <div class="confirmation__links">
+                        <a href="https://policies.google.com/privacy?hl=ru">Конфиденциальность</a>
+                        <a href="https://policies.google.com/terms?hl=ru">Условия использования</a>
+                      </div>
+                    </div>
+                    <button class="testimonials__form-btn" type="submit">Отправить</button>
+                    <span>Перед публикацией отзывы проходят модерацию</span>
+                  </form>
+                </div>
+              </div>
+              </div>
+          </div>
+        </form> 
+        <div class="description__inform">
+          <div class="testimonials d-none inform-item">
+            <p class="testimonials__title">Отзывов еще никто не оставлял</p>
+            <button class="testimonials__button">Написать отзыв</button>
+            <div class="testimonials__inner d-none">
+              <div class="testimonials__head">
+                <h4 class="testimonials__subtitle">Отзыв</h4>
+                <p class="testimonials__close">Закрыть</p>
+              </div>
+              <div class="stars">
+                <img src="../assets/images/star.png" alt="stars">
+                <img src="../assets/images/star.png" alt="stars">
+                <img src="../assets/images/star.png" alt="stars">
+                <img src="../assets/images/star.png" alt="stars">
+                <img src="../assets/images/star.png" alt="stars">
+              </div>
+              <form class="testimonials__form">
+                <div class="testimonials__inputs">
+                  <div>
+                    <p>Имя*</p>
+                    <input class="testimonials__name" type="text" placeholder="Имя">
+                  </div>
+                  <div>
+                    <p>Email*</p>
+                    <input class="testimonials__email" type="email" placeholder="Email">
+                  </div>
+                </div>
+                <p>Cообщения*</p>
+                <textarea class="testimonials__sms" name="testimonials" placeholder="Cообщения"></textarea>
+                <div class="confirmation__person">
+                  <input type="checkbox" id="confirmation__input">
+                  <label for="confirmation__input">Я не робот</label>
+                  <img width="30px" src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="logo">
+                  <div class="confirmation__links">
+                    <a href="https://policies.google.com/privacy?hl=ru">Конфиденциальность</a>
+                    <a href="https://policies.google.com/terms?hl=ru">Условия использования</a>
+                  </div>
+                </div>
+                <button class="testimonials__form-btn" type="submit">Отправить</button>
+                <span>Перед публикацией отзывы проходят модерацию</span>
+              </form>
+            </div>
+          </div>
+          <ul class="characteristics d-none inform-item">
+            <li class="characteristics__item">
+              <span class="characteristics__title">Ширина предмета</span>
+              <span class="characteristics__result">106 см</span>
+            </li>
+            <li class="characteristics__item">
+              <span class="characteristics__title">Длина предмета</span>
+              <span class="characteristics__result">1000 см</span>
+            </li>
+            <li class="characteristics__item">
+              <span class="characteristics__title">Вес с упаковкой (кг)</span>
+              <span class="characteristics__result">2.6 кг</span>
+            </li>
+          </ul>
+          <p class="description inform-item">Обои виниловые на флизелиновой основе коллекция Sea. Тип рисунка: Абстракция и геометрия. Раппорт (см): 64. Размеры рулона (м): 1.06 х 10.05. Способ производства: Горячее тиснение. Основа: Флизелиновая. Стиль артикула: Современный. Глянцевый муар на бархатистом фоне напоминает плавное движение волн, морской берег под лучами утреннего солнца. Теплые пастельные тона воплощают идею песка, слегка прохладного, но не остывшего за ночь. Переливы цвета завораживают. А мягкие линии приносят в интерьер гармонию и умиротворение. Кажется, еще чуть-чуть и услышишь шум прибоя. Коллекции PALITRA - это самый большой выбор всех типов виниловых обоев. В каталоге обоев PALITRA вы найдете множество интересных дизайнерских решений от лидера обойного российского рынка. Качество продукции соответствует самым высоким стандартам и требованиям потребителя, благодаря чему обои PALITRA уже много лет находят своих покупателей.</p>
         </div>
       </div>
     </div>
-
-
-       
     <footer class="footer">
       <div class="container">
       <div class="footer__logo">
