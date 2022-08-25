@@ -1,0 +1,20 @@
+.catalog__title{
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0px;
+}
+.catalog__form-radio{
+  appearance: none;
+  position: absolute;
+}
+.catalog__form-label{
+  color: #999999;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 3px;
+  margin-right: 10px;
+}
+.catalog__form-radio:checked+.catalog__form-label{
+  background-color:  #ffda33;
+  color: #333333;
+}

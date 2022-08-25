@@ -1,7 +1,7 @@
 import changeCardMode from './changeCardMode.js';
 import changeNumberOfProducts from './changeNumberOfProduct.js';
 import checkoutDescription from './checkoutDescription.js';
-import closeFilter from './closeFilter.js';
+import toggleFilter from './toggleFilter.js';
 import range from './range.js';
 import { toggleMenu } from './toggleMenu.js';
 import { toggleSearch } from './toggleMobileSearch.js';
@@ -15,7 +15,7 @@ changeCardMode()
 changeNumberOfProducts()
 toggleTestimonialsForm()
 range()
-closeFilter()
+toggleFilter()
 toggleMenu()
 toggleSearch()
 checkoutDescription()

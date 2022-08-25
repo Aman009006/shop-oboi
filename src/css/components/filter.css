@@ -1,6 +1,7 @@
 .filter{
     border: 1px solid rgba(206, 204, 204, 0.596);
     max-width: 316.56px;
+    height: fit-content;
 }
 .filter__title{
     font-size: 24px;
@@ -10,9 +11,14 @@
     border-bottom: 1px solid rgba(206, 204, 204, 0.596);
 }
 
+.open-filter{
+    width: 16px;
+    height: 16px;
+    display: none;
+}
 
 .filter__list {
-    padding: 6px 16px;
+    padding: 8px 16px;
     border-bottom: 1px solid rgba(206, 204, 204, 0.596);
     border-top: 1px solid rgba(206, 204, 204, 0.596);
 }
@@ -41,7 +47,7 @@
     background-position: 96% 8px;
 }
 .label__title{
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     padding: 4px;
     padding-left: 6px;
 }
@@ -182,10 +188,10 @@
     padding-left: 6px;
     gap: 4px;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.filter__list{
-    padding-bottom: 16px;
-}
+
 .filter__links img {
     width: 12px;
     height: 12px;
@@ -252,18 +258,31 @@
 @media(max-width:768px){
     .filter{
         max-width: 100%;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         border: 0;
         position: fixed;
+        top: 0px;
+        transform: translateX(200vw);
+        transition: 0.3s ease;
         background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        right: -100%;
+        z-index: 10;
+    }
+    .filter__title{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .filter--active{
+        transform: translateX(0px);
     }
     .filter form{
         overflow-y:auto;
+    }
+    .open-filter {
+        display: block;
     }
 }
 
