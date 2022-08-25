@@ -31,6 +31,7 @@
   display: block;
   height: 1px;
   border: 1px solid #333333;
+  box-sizing: border-box;
 }
 
 .catalog-btn__icon::before {
@@ -40,6 +41,7 @@
   height: 1px;
   margin-top: -6px;
   border: 1px solid #333333;
+  box-sizing: border-box;
   transform: translate(-1px);
 }
 
@@ -50,6 +52,7 @@
   display: block;
   height: 1px;
   border: 1px solid #333333;
+  box-sizing: border-box;
   transform: translate(-1px);
 }
 
@@ -60,7 +63,6 @@
 }
 
 .search__input {
-  height: 40px;
   padding: 10px;
   border: 2px solid #ffda33;
   width: 100%;
@@ -180,5 +182,9 @@
   }
   .visible-modal{
     transform: translateY(0);
+  }
+  .nav__item{
+    font-weight: 600;
+    color: #333333;
   }
 }

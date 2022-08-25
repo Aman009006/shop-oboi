@@ -1,3 +1,4 @@
+@import './common.css';
 @import "./fonts.css";
 @import './components/footer.css';
 @import './components/header.css';
@@ -5,18 +6,19 @@
 @import './modules/detail.css';
 @import './modules/main.css';
 @import './__reset.css';
-@import './common.css';
 @import "./components/mobileMenu.css";
 @import './components/filter.css';
+@import "./components/detailDescription.css";
 
-.container{
+.container {
     padding: 0 40px;
     max-width: 1280px;
     margin: 0 auto;
 }
 
-@media(max-width:768px){
-    .container{
+@media(max-width:768px) {
+    .container {
         padding: 0 15px;
     }
 }
+
