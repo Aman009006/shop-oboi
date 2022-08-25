@@ -293,7 +293,7 @@ body{
     .detail__number{
         position: fixed;
         z-index: 10;
-        bottom: 0;
+        bottom: 70px;
         left: 0;
         background: white;
         width: 100%;
