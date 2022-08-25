@@ -7,3 +7,15 @@
 @import './__reset.css';
 @import './common.css';
 @import "./components/mobileMenu.css";
+
+.container{
+    padding: 0 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media(max-width:768px){
+    .container{
+        padding: 0 15px;
+    }
+}

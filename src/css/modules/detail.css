@@ -395,7 +395,7 @@ body{
 
 
 .detail__action {
-    width: 544px;
+    max-width: 544px;
 }
 
 .detail__title{
