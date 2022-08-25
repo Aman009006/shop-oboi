@@ -9,6 +9,7 @@
 @import "./components/mobileMenu.css";
 @import './components/filter.css';
 @import "./components/detailDescription.css";
+@import './components/navbar.css';
 
 .container {
     padding: 0 40px;
