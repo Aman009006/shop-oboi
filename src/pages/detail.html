@@ -253,8 +253,7 @@
               <img src="../assets/images/wall3.jpg" />
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
         <div thumbsSlider="" slidesPerView="auto" class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -400,8 +399,13 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        // calculateHeight:true,
+        // autoHeight: true,
         thumbs: {
           swiper: swiper,
+        },
+        pagination: {
+          el: ".swiper-pagination",
         },
       });
     </script>
