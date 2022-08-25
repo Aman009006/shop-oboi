@@ -1,0 +1,25 @@
+.navbar {
+    padding: 8px 0px;
+}
+.container {
+
+}
+.navbar__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar__item {
+    height: 61px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+.navbar__item img{
+    width: 24px;
+    height: 24px;
+}
+.navbar__title {
+}
