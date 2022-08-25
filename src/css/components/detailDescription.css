@@ -1,6 +1,7 @@
 .detail__description{
-  margin-bottom: 50px;
+  margin: 50px 0px;
 }
+
 .description__radio{
   appearance: none;
   position: absolute;
@@ -27,7 +28,7 @@
   border-bottom: 2px solid #ffda33;
 }
 .description__inform{
-  margin-top: -1px;
+  margin-top: 0px;
   border: 2px solid #ededed;
   padding: 48px 56px;
 }
