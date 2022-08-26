@@ -60,6 +60,8 @@
     display: flex;
     padding-left:6px ;
     position: relative;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 .label__checkbox {
     appearance: none;
@@ -68,7 +70,7 @@
     background: url(../../assets/images/square.png) no-repeat;
     background-size: 22px;
     padding-left: 22px;
-    background-position: -2px 0px;
+    background-position: -2px -2px ;
     position: relative;
     font-weight: 400;
 }
@@ -210,6 +212,9 @@
 .filter__links-container {
     padding-left: 6px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .filter__links-subtitle {
     padding-left: 16px;

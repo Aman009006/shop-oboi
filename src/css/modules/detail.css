@@ -202,15 +202,18 @@ body{
     color: #333333;
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .detail__compare-btn button {
     background: url(../../assets/images/icons/compared.svg) no-repeat;
     background-position: 50%;
+    cursor: pointer;
 }
 .detail__favorite-btn button{
     background: url(../../assets/images/icons/heart.svg) no-repeat;
     background-position: 50%;
+    cursor: pointer;
 }
 .detail__favorite-btn,.detail__compare-btn{
     background: #f7f7f7;
@@ -227,6 +230,7 @@ body{
     height: 50px;
     font-size: 18px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 @media(max-width:1160px){
