@@ -67,7 +67,14 @@
     position: absolute;
     top: 50%;
 }
-
+.main__slider .swiper-button-next{
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: 1px solid gray;
+    position: absolute;
+    top: 50%;
+}
 .main__slider .swiper-button-next::after,
 .main__slider .swiper-button-prev::after {
     display: none;
@@ -80,7 +87,7 @@
 }
 
 .main__slider .swiper-button-next {
-    right: 0;
+    right: -0px;
 }
 
 .main__slider .swiper-button-left {
