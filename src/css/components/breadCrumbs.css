@@ -1,0 +1,24 @@
+.bread-crumbs{
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+}
+.bread-crumbs__item a{
+  color: #999999;
+}
+.bread-crumbs__item a::after{
+  content: '-';
+  font-size: 1.5rem;
+  vertical-align: middle;
+  line-height: 0;
+  font-family: auto;
+  margin-left: 10px;
+}    
+.bread-crumbs__item--active a::after{
+  content: " ";
+}
+@media (max-width: 768px) {
+  .bread-crumbs{
+    display: none;
+  }  
+}

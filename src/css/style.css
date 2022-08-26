@@ -12,6 +12,7 @@
 @import './components/navbar.css';
 @import './components/mainSlider.css';
 @import "./components/mainCatalogs.css";
+@import "./components/breadCrumbs.css";
 
 .container {
     padding: 0 40px;

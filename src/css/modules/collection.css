@@ -26,6 +26,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .products__mode {
@@ -114,7 +115,9 @@
   margin: 20px 0px 10px 0px;
   width: 100%;
 }
-
+.row .products__card{
+  margin-bottom: 15px;
+}
 .row .products__card:hover {
   border: 2px solid #ffda33;
 }
@@ -126,7 +129,7 @@
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 15px;
   width: 100%;
-  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .default .card__datas {

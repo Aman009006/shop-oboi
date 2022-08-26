@@ -37,7 +37,7 @@
 }
 
 .main__slider-title img {
-    height: calc(100% - 2px);
+    height: 308px;
     margin: 0 auto;
     width: 213px;
 }
@@ -50,7 +50,7 @@
     color: #8b8b8b;
     font-weight: 600;
     font-size: 0.9rem;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
 .main__slider .products__card:hover {
