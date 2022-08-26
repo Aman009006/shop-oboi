@@ -5,6 +5,14 @@
   font-size: 28px;
   font-weight: 600;
   margin: 0px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.catalog__title img{
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
 }
 .catalog__form-radio{
   appearance: none;
@@ -30,6 +38,10 @@
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
+}
+.form-wrap{
+  flex-wrap: wrap;
+  gap: 10px;
 }
 @media (max-width:768px) {
   .catalog__title{
