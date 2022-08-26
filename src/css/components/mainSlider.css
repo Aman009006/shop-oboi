@@ -93,7 +93,7 @@
     display: none;
 }
 .main__catalog-sider .main__slider{
-    margin-top: 20px;
+    margin: 20px 0px 50px 0px;
 }
 @media (max-width:1200px) {
     .main__slider .swiper {
