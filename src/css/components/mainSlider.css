@@ -42,8 +42,9 @@
     width: 213px;
 }
 
+
 .swiper-wrapper .products__card {
-    margin: 0px;
+    margin: 0px 10px;
 }
 
 .main__slider-title a {
@@ -56,7 +57,7 @@
 .main__slider .products__card:hover {
     border: 0;
 }
-.swiper-wrapper 
+
 
 .main__slider .swiper-button-next,
 .main__slider .swiper-button-prev {
