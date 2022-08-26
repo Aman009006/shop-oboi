@@ -271,6 +271,10 @@
         justify-content: space-between;
         z-index: 10;
     }
+    .filter__form{
+        padding-right: 10px;
+    }
+    
     .filter__title{
         font-size: 20px;
         margin-top: 10px;

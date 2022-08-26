@@ -90,6 +90,7 @@
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 0px;
+    display: none;
 }
 
 @media (max-width:1200px) {
@@ -124,7 +125,9 @@
     .main__slider-title {
         display: flex;
     }
-    
+    .main__slider-title p{
+        display: block;
+    }
     .main__slider-title img {
         display: none;
     }
