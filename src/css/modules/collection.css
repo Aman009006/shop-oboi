@@ -172,15 +172,7 @@
   left: -2px;
   padding: 15px;
 }
-
-.default .products__card:hover .card__control-tabs {
-  visibility: visible;
-  opacity: 1;
-  z-index: 8;
-  border: 2px solid #ffda33;
-  border-top: 0px;
-}
-
+.default .products__card:hover .card__control-tabs,
 .column .products__card:hover .card__control-tabs {
   visibility: visible;
   opacity: 1;
@@ -298,6 +290,7 @@
     left: 0px;
     margin: 20px 0px 10px 0px;
     background-color: #FFFFFF;
+    padding: 0px;
   }
 
   .column .card__inner:hover,
@@ -306,8 +299,8 @@
     border: 2px solid #ffda33;
   }
 
-  .default:hover .card__control-tabs,
-  .column:hover .card__control-tabs {
+  .default .products__card:hover .card__control-tabs,
+  .column .products__card:hover .card__control-tabs {
     border: 0;
   }
 

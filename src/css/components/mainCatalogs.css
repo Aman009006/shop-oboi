@@ -1,3 +1,6 @@
+.main__catalog-sider{
+  margin-top: 50px;
+}
 .catalog__title{
   font-size: 28px;
   font-weight: 600;
@@ -13,8 +16,25 @@
   font-weight: 600;
   padding: 5px 3px;
   margin-right: 10px;
+  white-space: nowrap;
 }
+.catalog__form::-webkit-scrollbar {
+  display: none;
+}
+
 .catalog__form-radio:checked+.catalog__form-label{
   background-color:  #ffda33;
   color: #333333;
+}
+.catalog__form{
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+@media (max-width:768px) {
+  .catalog__title{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px;
+  }
 }
